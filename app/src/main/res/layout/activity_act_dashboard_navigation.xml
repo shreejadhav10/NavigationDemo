@@ -15,7 +15,7 @@
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
@@ -45,6 +45,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/item_drawer_background"
                     android:clickable="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
                     android:drawableLeft="@drawable/ic_refresh_black_24dp"
                     android:drawablePadding="48dp"
                     android:gravity="center_vertical"
@@ -56,7 +58,8 @@
                     android:background="@drawable/item_drawer_background"
                     android:clickable="true"
                     android:drawableLeft="@drawable/ic_description_black_24dp"
-
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
                     android:drawablePadding="48dp"
                     android:gravity="center_vertical"
                     android:text="Pending Items" />
@@ -66,7 +69,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/item_drawer_background"
                     android:clickable="true"
-
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
                     android:drawableLeft="@drawable/ic_settings_black_24dp"
                     android:drawablePadding="48dp"
                     android:gravity="center_vertical"
@@ -78,7 +82,8 @@
                     android:background="@drawable/item_drawer_background"
                     android:clickable="true"
                     android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
-
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
                     android:drawablePadding="48dp"
                     android:gravity="center_vertical"
                     android:text="Log Out" />
