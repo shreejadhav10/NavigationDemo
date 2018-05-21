@@ -20,12 +20,70 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:itemBackground="@drawable/item_drawer_background"
-        app:itemTextColor="@android:color/black"
         app:itemIconTint="@color/colorPrimary"
-        app:headerLayout="@layout/nav_header_act_dashboard_navigation"
-        app:menu="@menu/activity_act_dashboard_navigation_drawer" >
+        app:itemTextColor="@android:color/black">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <include layout="@layout/nav_header_act_dashboard_navigation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/item_drawer_background"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                    android:drawablePadding="48dp"
+                    android:gravity="center_vertical"
+                    android:text="Refresh" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/item_drawer_background"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+
+                    android:drawablePadding="48dp"
+                    android:gravity="center_vertical"
+                    android:text="Pending Items" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/item_drawer_background"
+                    android:clickable="true"
+
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:drawablePadding="48dp"
+                    android:gravity="center_vertical"
+                    android:text="Settings" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/item_drawer_background"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+
+                    android:drawablePadding="48dp"
+                    android:gravity="center_vertical"
+                    android:text="Log Out" />
+            </LinearLayout>
+        </LinearLayout>
 
     </android.support.design.widget.NavigationView>
 
